@@ -1,0 +1,64 @@
+/* color palatte colors:
+ED715C  - salmon
+EEEEEE - grey
+E9E0D5 - pearl
+1DABA5 - sea green
+3399DC - bright blue
+344459 - navy */
+
+body {
+	font-family: Hind;
+	font-weight: 300;
+	font-size: 18px;
+	color: #344459;
+	background-color: #EEEEEE;
+}
+
+header {
+	margin-bottom: 25px;
+}
+
+.normalmenu {
+	padding: 50px 20px 20px 20px;
+	margin-bottom: 20px;
+
+}
+
+#joell {
+	float: left;
+	width: 45%;
+	color: #ED715C;
+	font-family: Montez;
+	font-weight: bold;
+	font-size: 36px;
+	padding-left: 9%
+
+}
+
+li, a {
+   text-align: center;
+   color: #3399DC;
+   display: inline;
+   text-decoration: none;
+   padding-right: 20px;
+/* how to scoot the list down a bit so it's even with the name home button? */
+}
+
+hr {
+	clear: both;
+	border: 0;
+	height: 1px;
+	background: #1DABA5;
+	width: 80%;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+
+#traits, .aboutblurb, #joelldictionary, footer,  {
+	clear: both;
+}
+
+
+
+
+
