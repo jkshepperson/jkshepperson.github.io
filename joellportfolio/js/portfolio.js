@@ -1,10 +1,21 @@
+$(document).ready(function() {
+
 //About page
 //when user clicks the article links or book links, open full URL in new tab
 
 //Artifacts Page
-//when user clicks on image of artifact
-//display the image in a modal layer pop up with discription
-//also show an 'x' that when clicked, will close the pop up and remove the modal layer
+
+$('img').click(blowUp); // when user clicks on images, blow them up by toggling between classes
+
+function blowUp() { 
+	$('.thumbnail').toggleClass('large');// when a user clicks an image, toggle the display of the image based on class
+
+	if ($('.thumbnail').hasClass('large')){ //if the image has the large class, remove it
+        $(this).removeClass('large'); 
+    } else {
+        $(this).addClass('large'); //if the image does not have the large class add it
+      }
+}
 
 //Design Page
 //when user clicks on image from the design project
@@ -19,4 +30,4 @@
 //on submit, create email and send to jkshepperson@gmail.com 
 //on submit, remove the form and instead display large text 'Thank you!'
 //only allow one submission per email address
-
+});
