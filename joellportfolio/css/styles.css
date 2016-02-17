@@ -34,7 +34,7 @@ header {
 
 }
 
-li, a {
+.normalmenu li, .normalmenu a {
    text-align: center;
    color: #3399DC;
    display: inline;
@@ -68,20 +68,46 @@ li, a {
 	font-style: italic;
 	clear: both;
 	float: left;
+	color: #666666;
 	margin-left: 6.65em;
-	margin-bottom: .75em;
+	margin-bottom: 1em;
 }
 
 .traits, .aboutblurb {
 	clear: both;
 	float: left;
-	width: 75%;
 	font-size: 1.25rem;
-	margin-left: 8em;
+
 }
 
-p.traits {
-	padding-bottom: 1.25em;
+ol.traits {
+	width: 75%;
+	padding-bottom: 3em;
+	padding-left: 8em;
+}
+
+.traits li {
+	list-style-type: none;
+	color: #000000;
+    counter-increment: step-counter;
+    padding-bottom: 1em;
+}
+
+.traits li::before{
+	content: counter(step-counter);
+    margin-right: 1em;
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: 700;
+    background-color: #F5F5F5;
+    border-radius: 2em;
+
+}
+
+
+.books {
+	float: right;
+	margin-right: 8em;
 }
 
 .survey, .persona, .mentalmodel {
