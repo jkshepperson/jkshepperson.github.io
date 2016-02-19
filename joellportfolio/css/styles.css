@@ -15,13 +15,16 @@ body {
 }
 
 header {
-	margin-bottom: 15%;
 	background-color: #F5F5F5;
 	padding-bottom: .75em;
+	margin-bottom: 1em;
+	position: fixed;
+	top: 0;
+	width:100%;
 }
 
 .normalmenu {
-	padding: 2em 2em 2em 8em;
+	padding: 1.5em 2em 1.5em 8em;
 
 }
 
@@ -39,9 +42,11 @@ header {
    color: #3399DC;
    display: inline;
    text-decoration: none;
-   padding-right: 1.25rem;
+   padding-right: 1.25em;
 /* how to scoot the list down a bit so it's even with the name home button? */
 }
+
+/* index page stuff */
 
 #jopic {
 	float: right;
@@ -53,13 +58,13 @@ header {
 
 #joelldictionary {
 	float: left;
-	width: 50%;
+	width: 40%;
 	font-family: 700;
-	font-size: 4em;
+	font-size: 5rem;
 	font-weight: 700;
-	letter-spacing: .18em;
-	padding-left: 2.25em;
-	padding-top: 1em;
+	letter-spacing: .15em;
+	padding-top: 3em;
+	margin-left: 1.85em;
 }
 
 #noun {
@@ -69,11 +74,10 @@ header {
 	clear: both;
 	float: left;
 	color: #666666;
-	margin-left: 6.65em;
-	margin-bottom: 1em;
+	margin: 1.5em auto 1em 6.65em;
 }
 
-.traits, .aboutblurb {
+.traits {
 	clear: both;
 	float: left;
 	font-size: 1.25rem;
@@ -83,29 +87,100 @@ header {
 ol.traits {
 	width: 75%;
 	padding-bottom: 3em;
-	padding-left: 8em;
+	padding-left: 7.65em;
 }
 
 .traits li {
 	list-style-type: none;
 	color: #000000;
     counter-increment: step-counter;
-    padding-bottom: 1em;
+    padding-bottom: 1.25em;
 }
 
 .traits li::before{
 	content: counter(step-counter);
     margin-right: 1em;
     font-size: 1.25rem;
-    color: #ED715C;
+    color: #666666;
 
 }
 
+.online {
+	float: left;
+	width: 30%;
+	margin-left: 8em;
+	padding: 1em;
+}
 
 .books {
 	float: right;
+	width: 30%;
 	margin-right: 8em;
+	padding: 1em;
 }
+
+article {
+	margin-bottom: 2em;
+	width: 30%;
+}
+
+article h3 {
+	color: #ED715C;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding-bottom: 1em;
+
+}
+
+.online p, .books p {
+	padding-bottom: 1em;
+}
+
+article a:link, article a:visited {
+    background-color: #3399DC;
+    color: white;
+    padding: 1.25em 1em;	
+    text-decoration: none;
+    display: inline-block;
+    font-size: .85rem;
+}
+
+article a:hover, article a:active {
+    background-color: #344459;
+    padding: 1em;
+    font-size: .85rem;
+}
+
+footer {
+	clear: both;
+	background-color: #1DABA5;
+	height: 4em;
+	width: 100%;
+}
+
+.socialmedia {
+	clear: both;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: 2em;
+	margin-left: 45%;
+
+}
+
+/* artiface, design pages */
+
+h2 {
+	font-size: 2rem;
+	color: #666666;
+	padding-top: 5em;
+}
+
+.notuserquote {
+	font-style: italic;
+	font-weight: 400;
+	color: #1DABA5;
+}
+
 
 .survey, .persona, .mentalmodel {
 	clear: both;
@@ -125,21 +200,6 @@ ol.traits {
 	width: 100%;
 }
 
-footer {
-	clear: both;
-	background-color: #1DABA5;
-	height: 4em;
-	width: 100%;
-}
-
-.socialmedia {
-	clear: both;
-	color: #FFFFFF;
-	font-size: 18px;
-	padding-top: 2em;
-	margin-left: 45%;
-
-}
 
 
 
