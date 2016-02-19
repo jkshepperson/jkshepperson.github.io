@@ -8,13 +8,7 @@ $(document).ready(function() {
 $('img').click(blowUp); // when user clicks on images, blow them up by toggling between classes
 
 function blowUp() { 
-	$('.thumbnail').toggleClass('large');// when a user clicks an image, toggle the display of the image based on class
-
-	if ($('.thumbnail').hasClass('large')){ //if the image has the large class, remove it
-        $(this).removeClass('large'); 
-    } else {
-        $(this).addClass('large'); //if the image does not have the large class add it
-      }
+	$('.thumbnails').toggleClass('large');// when a user clicks an image, toggle the display of the image based on class
 }
 
 //Design Page

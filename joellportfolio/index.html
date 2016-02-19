@@ -7,15 +7,16 @@
 		<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/portfolio_reset.css" media="screen" type="text/css" />
 		<link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
+		<link rel="stylesheet" href="css/lightbox.css">
 	</head>
 
 	<body>
 		<header>
 
 			<nav class="normalmenu">
-				<div id="joell">Joell Shepperson</div>
+				<h1 id="joell">Joell Shepperson</h1>
 				<ul>
-      				<li><a href="about.html" class="active">About</a></li>
+      				<li><a href="index.html" class="active">About</a></li>
       				<li><a href="artifacts.html">UX Artifacts</a></li>
       				<li><a href="design.html">UX Design</a></li>
       				<li><a href="contact.html">Contact</a></li>
@@ -26,7 +27,7 @@
 
 			<div>
 				<h2 id="joelldictionary">j &ocirc; h &#8226; &euml;l:</h2>
-				<img src="images/jopic.jpg" alt="Joell Shepperson, UXer" id="jopic">
+				<img src="images/jopic.jpg" alt="Joell Shepperson, UXer" data-lightbox="image-1" data-title="Hi! I'm Joell" class="thumbnails" id="jopic">
 				<div id="noun">&#91;noun&#93;</div>
 					<ol class="traits">
    						<li>A lover of innovation, collaboration and all things related to empathetic design.</li>
@@ -54,5 +55,6 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/portfolio.js"></script>
+		<script src="js/lightbox.js"></script>
 	</body>
 </html>
