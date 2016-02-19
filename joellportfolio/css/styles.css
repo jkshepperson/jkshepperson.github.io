@@ -97,10 +97,7 @@ ol.traits {
 	content: counter(step-counter);
     margin-right: 1em;
     font-size: 1.25rem;
-    color: #000000;
-    font-weight: 700;
-    background-color: #F5F5F5;
-    border-radius: 2em;
+    color: #ED715C;
 
 }
 
@@ -127,8 +124,6 @@ ol.traits {
 	height: 100%;
 	width: 100%;
 }
-
-/*can't get my social media footer to display?*/
 
 footer {
 	clear: both;

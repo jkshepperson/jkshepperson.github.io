@@ -8,35 +8,10 @@ $(document).ready(function() {
 $('img').click(blowUp); // when user clicks on images, blow them up by toggling between classes
 
 function blowUp() { 
-<<<<<<< HEAD
-	$('.thumbnails').toggleClass('large');// when a user clicks an image, toggle the display of the image based on class
-=======
-
-    /* 
-        The behavior I noticed in this function is that I can click on an image once, and then
-        the image becomes large.  If I keep clicking on the image, it stays large.
-
-        This is happening mostly because the images have a class of .thumbnails and you are calling 
-        the .thumbnail class here (plural vs. singular).
-
-        Also, the intents of the .toggleClass you have and the if statement are basically the same.
-        You only need one or the other, but not both - .toggleClass is easiest.
-
-        Also (last one!), since you have multiple images with that .thumbnails class on it, you should
-        be using $(this) as your selector (just as you are doing in your if statement) to add/remove/toggle.
-
-        I know that was a lot - please let me know if you have any questions about this ^^ 
-     */
-
-	$('.thumbnail').toggleClass('large');// when a user clicks an image, toggle the display of the image based on class
-
-	if ($('.thumbnail').hasClass('large')){ //if the image has the large class, remove it
-        $(this).removeClass('large'); 
-    } else {
-        $(this).addClass('large'); //if the image does not have the large class add it
-      }
->>>>>>> origin/master
+	$('.thumbnails').toggleClass('large');// when a user clicks an image blow up
 }
+
+
 
 
 /*
