@@ -1,16 +1,20 @@
 /* color palatte colors:
-ED715C  - salmon
-F5F5F5 - grey
+F5F5F5 - grey nav
+444444 - grey text
 E9E0D5 - pearl
 1DABA5 - sea green
 3399DC - bright blue
 344459 - navy */
 
+/* start page */
+
+/* base site (navigation, footer, fonts) styles */
+
 body {
 	font-family: 'Hind';
 	font-weight: 300;
 	font-size: 18px;
-	color: #344459;
+	color: #444444;
 	background-color: #FFFFFF;
 }
 
@@ -18,22 +22,22 @@ header {
 	background-color: #F5F5F5;
 	padding-bottom: .75em;
 	margin-bottom: 1em;
-	position: fixed;
+	position: relative;
 	top: 0;
 	width:100%;
-}
-
-.normalmenu {
-	padding: 1.5em 2em 1.5em 8em;
-
 }
 
 #joell {
 	float: left;
 	width: 45%;
-	color: #ED715C;
+	color: #000000;
 	font-family: 'Sacramento';
 	font-size: 2.25rem;
+
+}
+
+.normalmenu {
+	padding: 1.5em 2em 1.5em 8.5em;
 
 }
 
@@ -43,10 +47,35 @@ header {
    display: inline;
    text-decoration: none;
    padding-right: 1.25em;
-/* how to scoot the list down a bit so it's even with the name home button? */
 }
 
-/* index page stuff */
+.normalmenu a:hover {
+	color: #1DABA5;
+}
+
+a.active {
+	color: #1DABA5;
+	font-weight: 400;
+}
+
+footer {
+	clear: both;
+    background-image: url("images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    
+}
+
+.socialmedia {
+	clear: both;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-top: 2em;
+	margin-left: 45%;
+
+}
+
+/* index page styles */
 
 #jopic {
 	float: right;
@@ -105,35 +134,8 @@ ol.traits {
 
 }
 
-.online {
-	float: left;
-	width: 30%;
-	margin-left: 8em;
-	padding: 1em;
-}
-
-.books {
-	float: right;
-	width: 30%;
-	margin-right: 8em;
-	padding: 1em;
-}
-
-article {
-	margin-bottom: 2em;
-	width: 30%;
-}
-
-article h3 {
-	color: #ED715C;
-	font-weight: 700;
-	font-size: 1.5rem;
-	padding-bottom: 1em;
-
-}
-
-.online p, .books p {
-	padding-bottom: 1em;
+.currentlyreading {
+	clear: both;
 }
 
 article a:link, article a:visited {
@@ -151,34 +153,11 @@ article a:hover, article a:active {
     font-size: .85rem;
 }
 
-footer {
-	clear: both;
-	background-color: #1DABA5;
-	height: 4em;
+/* artifact, design pages */
+
+.topquote {
+	background-color: #E9E0D5;
 	width: 100%;
-}
-
-.socialmedia {
-	clear: both;
-	color: #FFFFFF;
-	font-size: 18px;
-	padding-top: 2em;
-	margin-left: 45%;
-
-}
-
-/* artiface, design pages */
-
-h2 {
-	font-size: 2rem;
-	color: #666666;
-	padding-top: 5em;
-}
-
-.notuserquote {
-	font-style: italic;
-	font-weight: 400;
-	color: #1DABA5;
 }
 
 
@@ -199,6 +178,8 @@ h2 {
 	height: 100%;
 	width: 100%;
 }
+
+/* contact page */
 
 
 
