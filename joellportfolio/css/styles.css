@@ -20,7 +20,7 @@ body {
 
 header {
 	background-color: #F5F5F5;
-	padding-bottom: .75em;
+	padding-bottom: 5em;
 	margin-bottom: 1em;
 	position: relative;
 	top: 0;
@@ -33,15 +33,17 @@ header {
 	color: #000000;
 	font-family: 'Sacramento';
 	font-size: 2.25rem;
+	padding: .75em 0 1em 1em;
 
 }
 
-.normalmenu {
-	padding: 1.5em 2em 1.5em 8.5em;
-
+ul.mainmenu {
+	float: right;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
-.normalmenu li, .normalmenu a {
+.mainmenu li, .mainmenu a {
    text-align: center;
    color: #3399DC;
    display: inline;
@@ -49,7 +51,7 @@ header {
    padding-right: 1.25em;
 }
 
-.normalmenu a:hover {
+.mainmenu a:hover {
 	color: #1DABA5;
 }
 
@@ -60,10 +62,9 @@ a.active {
 
 footer {
 	clear: both;
-    background-image: url("images/background.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-    
+	background-color: #333333;
+	height: 4em;
+	width: 100%;
 }
 
 .socialmedia {
@@ -165,6 +166,12 @@ article a:hover, article a:active {
 	clear: both;
 	float: left;
 	width: 70%;
+}
+
+.processdesign {
+	width: 100%;
+	height: 100%;
+	
 }
 
 .thumbnails {
