@@ -21,10 +21,8 @@ body {
 header {
 	background-color: #F5F5F5;
 	padding-bottom: 5em;
-	margin-bottom: 1em;
-	position: relative;
+	width: 100%;
 	top: 0;
-	width:100%;
 }
 
 #joell {
@@ -32,15 +30,18 @@ header {
 	width: 45%;
 	color: #000000;
 	font-family: 'Sacramento';
-	font-size: 2.30rem;
-	padding: .75em 0 1em 1.50em;
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	padding: .55em 0 .50em 0;
+	margin-left: 1.75em;
 
 }
 
 ul.mainmenu {
 	float: right;
-	padding-top: 2em;
-	padding-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+	margin-right: 2.25em;
 }
 
 .mainmenu li, .mainmenu a {
@@ -48,11 +49,11 @@ ul.mainmenu {
    color: #3399DC;
    display: inline;
    text-decoration: none;
-   padding-right: 1.25em;
+   padding-right: 1em;
 }
 
 .mainmenu a:hover {
-	color: #1DABA5;
+	color: #344459;
 }
 
 a.active {
@@ -76,33 +77,41 @@ footer {
 
 }
 
+p.hide, div.hide {
+	display: none;
+}
+
 /* index page styles */
 
 #jopic {
-	float: right;
-	size: 20% 20%;
+	float: left;
+	width: 40%;
+	height: 40%;
 	border-radius: 50%;
+	padding-top: 3.50em;
+	margin-left: 20em;
 }
 
 #joelldictionary {
+	clear: left;
 	float: left;
-	width: 40%;
+	width: 60%;
 	font-family: 700;
-	font-size: 5rem;
+	font-size: 6.5rem;
 	font-weight: 700;
 	letter-spacing: .15em;
-	padding-top: 2em;
-	margin-left: 1.5em;
+	padding-top: .50em;
+	margin-left: 3.25em;
 }
 
 #noun {
-	font-weight: 400;
-	font-size: 2rem;
+	font-weight: 700;
+	font-size: 3rem;
 	font-style: italic;
 	clear: both;
 	float: left;
 	color: #666666;
-	margin: 1.5em auto 1em 6.65em;
+	margin: 1.5em auto 1.50em 6em;
 }
 
 .traits {
@@ -154,30 +163,107 @@ article a:hover, article a:active {
 
 /* artifact, design pages */
 
+div.topquote {
+	width: 100%;
+	padding: 6em .75em;
+}
+
 .notuserquote {
 	color: #1DABA5;
-	font-size: 2.5rem;
+	font-size: 4rem;
 	font-weight: 700;
 	font-style: italic;
-	padding-top: 1em;
 	padding-bottom: .50em;
-	margin-left: 10em;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .topquote p {
 	font-size: 2rem;
 	line-height: 150%;
-	padding-bottom: 1em;
-	margin-left: 1em;
-	margin-right: 1em;
 	text-align: center;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .processimage {
 	width: 75%;
 	height: 75%;
-	padding: 1em;
-	margin-left: 6em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+
+}
+
+#surveybox {
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+#surveybox:hover, #personabox:hover, #modelbox:hover {
+	background-color: #EEEEEE;
+
+}
+
+.projecttitle {
+	display: block;
+	text-align: center;
+	font-family: 600;
+	font-style: bold;
+	color: #1DABA5;
+	font-size: 2rem;
+	padding: .25em;
+	margin-top: 1em;
+}
+
+.location {
+	display: block;
+	text-align: center;
+	padding-bottom: 1em;
+	color: #444444;
+	font-size: 1.25rem;
+}
+
+.centertext {
+	display: block;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #344459;
+}
+
+#showmore {
+	text-decoration: none;
+	display: block;
+	background-color: #3399DC;
+	padding: 8px;
+	width: 10%; 
+	font-size: 1rem;
+	color: #FFFFFF;
+	margin: 1em auto 1em auto;
+}
+
+#showless {
+	text-decoration: none;
+	display: block;
+	background-color: #344459;
+	padding: 8px;
+	width: 10%; 
+	font-size: 1rem;
+	color: #FFFFFF;
+	margin: 1em auto 1em auto;
+}
+
+#show-on-click {
+	padding-top: .5em;
+	padding-bottom: .25em;
 }
 
 .survey, .persona, .mentalmodel {
@@ -188,17 +274,94 @@ article a:hover, article a:active {
 
 .thumbnails {
 	clear: both;
-	float: right;
+	display: block;
 	height: 25%;
 	width: 25%;
+	padding: .75em .25em;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .large {
-	height: 100%;
-	width: 100%;
+	height: 75%;
+	width: 75%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /* contact page */
+
+.backgroundwork {
+	background-color: #666666;
+	color: #FFFFFF;
+	width: 100%;
+	padding: 6em 2em;
+}
+
+h2 {
+	color: #E9E0D5;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-left: 8.5em;
+	padding-bottom: .5em;
+}
+
+.worktogether {
+	font-size: 2rem;
+	line-height: 150%;
+	width: 90%;
+	text-align: center;
+	margin-left: 1.5em;
+}
+
+.yourneedsbox {
+	background-color: #FFFFFF;
+	width: 100%;
+	padding-top: 8em;
+	padding-bottom: 2.5em;
+}
+
+.whattype {
+	color: #666666;
+	font-size: 2rem;
+	text-align: center;
+
+}
+
+.rolebox {
+	width: 100%;
+	padding: .25em 0 3em 3em;
+}
+
+.rolelist {
+	font-size: 1.5rem;
+	display: inline-block;
+
+}
+
+.rolelist li, .rolelist a {
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    background-color: #3399DC;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em .25em;
+    margin-left: .25em;
+    margin-right: .40em;
+
+}
+
+.jr {
+	font-style: italic;
+	margin-right: .5em;
+	color: #CCCCCC;
+}
+
+
+
+
+
 
 
 
