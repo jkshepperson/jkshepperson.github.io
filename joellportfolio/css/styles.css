@@ -14,8 +14,8 @@ header {
 	background-color: #F5F5F5;
 }
 
-.jumbotron {
-	text-align: center;
+img:hover {
+	cursor: zoom-in;
 }
 
 .jo-nav {
@@ -39,7 +39,7 @@ header {
 	font-size: 3rem;
 	letter-spacing: 2px;
 	padding: .55em 0 .50em 0;
-	margin-left: 1.75em;
+	margin-left: 1.50em;
 }
 
 .joell a {
@@ -53,6 +53,17 @@ header {
 }
 
 p.hide-some, div.hide-some {
+	display: none;
+}
+
+.container-color {
+	background-color: #333333;
+	color: #FFFFFF;
+	width: 100%;
+	padding: 6em 2em;
+}
+
+.navbar-left {
 	display: none;
 }
 
@@ -74,7 +85,7 @@ h2.dictionary {
 	color: #FFFF00;
 	padding-top: .50em;
 	padding-left: .50em;
-	margin-left: .75em;
+	text-align: center;
 }
 
 .noun {
@@ -83,6 +94,7 @@ h2.dictionary {
 	color: #E9E0D5;
 	font-style: italic;
 	padding-top: .75em;
+	text-align: center;
 }
 
 .definition {
@@ -91,7 +103,7 @@ h2.dictionary {
 	display: block;
 	color: #FFFFFF;
 	padding: 1em 1em 3em 1em;
-	margin-bottom: 10em;
+	margin: .25em 0 10em 8em;
 
 }
 
@@ -104,7 +116,6 @@ h2.dictionary {
 	width: 90%;
 	display: block;
 	font-size: 2.15rem;
-	margin: auto;
 }
 
 .second-block {
@@ -117,20 +128,20 @@ h2.dictionary {
 
 .article-link {
 	padding: 5px;
-	margin-bottom: 5px;
+	margin: 0 0 10px 5px;
 }
 
 
-/* artifact, design pages */
+/* process, work pages */
 
 div.topquote {
 	width: 100%;
 	padding: 6em .75em;
 }
 
-.notuserquote-green {
-	color: #1DABA5;
-	font-size: 5rem;
+.notuserquote-yellow {
+	color: #F6FF97;
+	font-size: 4rem;
 	font-weight: 700;
 	font-style: italic;
 	padding-bottom: .50em;
@@ -141,8 +152,8 @@ div.topquote {
 }
 
 .notuserquote-blue {
-	color: #63D1F4;
-	font-size: 5rem;
+	color: #70DBDB;
+	font-size: 4rem;
 	font-weight: 700;
 	font-style: italic;
 	padding-bottom: .50em;
@@ -152,17 +163,17 @@ div.topquote {
 	margin-right: auto;
 }
 
-.topquote p {
-	font-size: 3rem;
-	line-height: 150%;
-	text-align: center;
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+.starter {
+	width: 50%;
 }
 
-.jo-header {
-	background-color: #FFFFFF;
+.topquote p {
+	font-size: 2.5rem;
+	line-height: 150%;
+	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .processimage {
@@ -191,7 +202,7 @@ div.topquote {
 	font-family: 600;
 	font-style: bold;
 	color: #1DABA5;
-	font-size: 2rem;
+	font-size: 3.5rem;
 	padding: .25em;
 	margin-top: 1em;
 }
@@ -207,11 +218,11 @@ div.topquote {
 
 .centertext {
 	display: block;
-	width: 75%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #344459;
 }
 
@@ -237,14 +248,14 @@ div.topquote {
 	margin-left: auto;
 }
 
+.result {
+	color: #1DABA5;
+	font-style: italic;
+	font-weight: 700;
+}
+
 /* contact page */
 
-.jo-header {
-	background-color: #666666;
-	color: #FFFFFF;
-	width: 100%;
-	padding: 6em 2em;
-}
 
 .jo-discuss {
 	text-align: center;

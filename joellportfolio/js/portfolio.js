@@ -8,7 +8,13 @@ $(document).ready(function() {
 $('img').click(blowUp); // when user clicks on images, blow them up by toggling between classes
 
 function blowUp() {
-	$(this).toggleClass('large');// when a user clicks an image blow up
+	$(this).toggleClass('large');// when a user clicks an image blow up and zoom out cursor
+	var className = $(this).attr('class') 
+	if (className = "thumbnails") {
+		$(this).css("cursor", "zoom-in");
+	} else {
+		$(this).css("cursor", "zoom-out");
+	}
 }
 
 //Process Page
@@ -16,11 +22,7 @@ function blowUp() {
 $('.showmore').click(showMoreStuff); //when user clicks on project section (between the divs)
 
 function showMoreStuff () {
-	// $('img').addClass('large'); //blowup the images
-	// $('#show-on-click').slideDown(); //push other sections down, reveal hidden text
-	// $('#showLess').slideDown(); //push the show less link down, too
-	// $('#showLess').show(); //show the show less link
-	// $('#showMore').hide(); //hide the show more link
+	$(this).find('.showmore_image').addClass('large');
 	$(this).hide();
 	$($(this).next()).show();
 	$($(this).next().next()).show();
@@ -29,6 +31,7 @@ function showMoreStuff () {
 $('.showless').click(showLessStuff); //when user clicks show less, collapse stuff
 
 function showLessStuff () {
+	$('img').removeClass('large');
 	$(this).hide();
 	$($(this).prev()).hide();
 	$($(this).prev().prev()).show();
