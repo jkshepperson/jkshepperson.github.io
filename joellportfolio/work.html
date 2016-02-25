@@ -1,53 +1,109 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Hind:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
+   
+    <title>Joell Portfolio</title>
 
-<html>
-	<head>
-		<link href='https://fonts.googleapis.com/css?family=Hind:400,300,600' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/portfolio_reset.css" media="screen" type="text/css" />
-		<link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
-	</head>
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
 	<body>
 		<header>
-			
-			<nav class="normalmenu">
-				<h1 id="joell">Joell Shepperson</h1>
-				<ul class="mainmenu">
-      				<li><a href="index.html">About</a></li>
-      				<li><a href="process.html">Process</a></li>
-      				<li><a href="work.html" class="active">Work</a></li>
-      				<li><a href="contact.html">Contact</a></li>
-   				</ul>
-			</nav>
+			<div class="container">
+		    <div class="header clearfix">
+			<nav>
+		        <ul class="nav nav-pills pull-right jo-nav">
+		          <li role="presentation"><a href="index.html">About</a></li>
+		          <li role="presentation"><a href="process.html">Process</a></li>
+		          <li role="presentation" class="jo-nav-active"><a href="work.html">Work</a></li>
+		          <li role="presentation"><a href="contact.html">Contact</a></li>
+		        </ul>
+		    </nav>
+		        <h1 class="joell"><a href="index.html">Joell Shepperson</a></h1>
+		        <h1 class="joell small"><a href="index.html">J.S.</a></h1>
 
 		</header>
 
-		<h1>Below is a sampling of how I approached specific projects in the past.</h1>
+			<div class="topquote jo-header">
+		        <div class="notuserquote-green">"Understand the whole and find the roots."</div>
+		        <p>Casting a wide net of understanding on new projects, product initiatives or user problems is always my first step to fully grasp the scope. From there, I find the roots of the problems, prioritize and get them done.</p>
+		</div>
 
-			<section class="design">
-				<h3>Tool Time</h3>
-				<p>description of tool time</p>
-				<img src="images/tools1.jpg" alt="Tool Time" class="thumbnails">
-				<img src="images/tools2.jpg" alt="Tool Time" class="thumbnails">
-				<img src="images/tools3.jpg" alt="Tool Time" class="thumbnails">
+			<div class="projectbox">
+				<h3 class="projecttitle">Tool Time</h3>
+					<h4 class="location">Agora Inc. 2015</h4>
+						
+						<p class="centertext">The need was;laksjdfl;kajsdlfkj</p>
 
-				<h3>Customer Marketing Trees</h3>
-				<p>description of customer trees</p>
-				<img src="images/trees1.jpg" alt="Customer Trees" class="thumbnails">
-				<img src="images/trees2.jpg" alt="Customer Trees" class="thumbnails">
-				<img src="images/trees3.jpg" alt="Customer Trees" class="thumbnails">
+						<div class="centertext showmore">
+							<span class="btn btn-default">Show More</span>
+						</div>
+						<div class="hide-some show-text">
+							<p class="centertext">Second paragraph asdaksdjf</p>
 
-				<h3>Testing Groups</h3>
-				<p>description of marketing groups.</p>
-				<img src="images/group1.jpg" alt="Testing Groups" class="thumbnails">
-				<img src="images/group2.jpg" alt="Testing Groups" class="thumbnails">
-				<img src="images/group3.jpg" alt="Testing Groups" class="thumbnails">
-s
-			<footer>
-				<p class="socialmedia">Links to social media</p>
-			</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/portfolio.js"></script>
-	</body>
+							<p class="centertext">Result: improved WYSIWG for content entry in our custom made CMS that integrated seamlessly into our eCommerce, CRM and marketing systems.</p>
+						</div>
+
+						<div class="hide-some centertext showless">
+							<span class="btn btn-default">Show Less</span>
+						</div>
+
+				<img src="images/tools2.jpg" alt="Tool Time" caption="Format WYSIWYG state" class="thumbnails">
+			</div>
+
+			<div class="projectbox">
+				<h3 class="projecttitle">Customer Trees</h3>
+					<h4 class="location">Agora Inc. 2015</h4>
+						
+						<p class="centertext">The need was;laksjdfl;kajsdlfkj</p>
+
+						<div class="centertext showmore">
+							<span class="btn btn-default">Show More</span>
+						</div>
+						<div class="hide-some show-text">
+							<p class="centertext">Second paragraph asdaksdjf</p>
+
+							<p class="centertext">Result: a cleaner, leaner and more simplistic workflow for in our core marketing system and CMS.</p>
+						</div>
+
+						<div class="hide-some centertext showless">
+							<span class="btn btn-default">Show Less</span>
+						</div>
+
+				<img src="images/trees1.jpg" alt="Tool Time" caption="Format WYSIWYG state" class="thumbnails">
+			</div>
+
+			<div class="projectbox">
+				<h3 class="projecttitle">Testing Groups</h3>
+					<h4 class="location">Agora Inc. 2015</h4>
+						
+						<p class="centertext">The need was;laksjdfl;kajsdlfkj</p>
+
+						<div class="centertext showmore">
+							<span class="btn btn-default">Show More</span>
+						</div>
+						<div class="hide-some show-text">
+							<p class="centertext">Second paragraph asdaksdjf</p>
+
+							<p class="centertext">Result: a  more organized and visual grouping mechanism to better plan, execute and analyze our teams marketing tests.</p>
+						</div>
+
+						<div class="hide-some centertext showless">
+							<span class="btn btn-default">Show Less</span>
+						</div>
+
+				<img src="images/group1.jpg" alt="Tool Time" caption="Format WYSIWYG state" class="thumbnails">
+			</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

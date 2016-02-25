@@ -10,156 +10,116 @@ E9E0D5 - pearl
 
 /* base site (navigation, footer, fonts) styles */
 
-body {
-	font-family: 'Hind';
-	font-weight: 300;
-	font-size: 18px;
-	color: #444444;
-	background-color: #FFFFFF;
-}
-
 header {
 	background-color: #F5F5F5;
-	padding-bottom: 5em;
-	width: 100%;
-	top: 0;
 }
 
-#joell {
+.jumbotron {
+	text-align: center;
+}
+
+.jo-nav {
+	padding: .55em 0 .50em 0; 
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.jo-nav-active {
+	color: #344459;
+	font-weight: 700;
+}
+
+
+.joell {
+	margin: 0;
 	float: left;
 	width: 45%;
-	color: #000000;
+	color: black;
 	font-family: 'Sacramento';
-	font-size: 2.5rem;
+	font-size: 3rem;
 	letter-spacing: 2px;
 	padding: .55em 0 .50em 0;
 	margin-left: 1.75em;
+}
+
+.joell a {
+	text-decoration: none;
+	color: black;
 
 }
 
-ul.mainmenu {
-	float: right;
-	padding-top: 1em;
-	padding-bottom: 1.5em;
-	margin-right: 2.25em;
+.joell.small {
+	display: none;
 }
 
-.mainmenu li, .mainmenu a {
-   text-align: center;
-   color: #3399DC;
-   display: inline;
-   text-decoration: none;
-   padding-right: 1em;
-}
-
-.mainmenu a:hover {
-	color: #344459;
-}
-
-a.active {
-	color: #1DABA5;
-	font-weight: 400;
-}
-
-footer {
-	clear: both;
-	background-color: #333333;
-	height: 4em;
-	width: 100%;
-}
-
-.socialmedia {
-	clear: both;
-	color: #FFFFFF;
-	font-size: 18px;
-	padding-top: 2em;
-	margin-left: 45%;
-
-}
-
-p.hide, div.hide {
+p.hide-some, div.hide-some {
 	display: none;
 }
 
 /* index page styles */
 
 #jopic {
-	float: left;
 	width: 40%;
 	height: 40%;
 	border-radius: 50%;
 	padding-top: 3.50em;
-	margin-left: 20em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#joelldictionary {
-	clear: left;
-	float: left;
-	width: 60%;
-	font-family: 700;
-	font-size: 6.5rem;
-	font-weight: 700;
-	letter-spacing: .15em;
+h2.dictionary {
+	display: block;
+	font-size: 7rem;
+	color: #FFFF00;
 	padding-top: .50em;
-	margin-left: 3.25em;
+	padding-left: .50em;
+	margin-left: .75em;
 }
 
-#noun {
-	font-weight: 700;
-	font-size: 3rem;
+.noun {
+	display: block;
+	font-size: 4rem;
+	color: #E9E0D5;
 	font-style: italic;
+	padding-top: .75em;
+}
+
+.definition {
 	clear: both;
-	float: left;
-	color: #666666;
-	margin: 1.5em auto 1.50em 6em;
-}
-
-.traits {
-	clear: both;
-	float: left;
-	font-size: 1.75rem;
+	width: 100%;
+	display: block;
+	color: #FFFFFF;
+	padding: 1em 1em 3em 1em;
+	margin-bottom: 10em;
 
 }
 
-ol.traits {
-	width: 75%;
-	padding-bottom: 3em;
-	padding-left: 7.65em;
+.trait {
+	display: block;
+	padding: 1em;
 }
 
-.traits li {
-	list-style-type: none;
-	color: #000000;
-    counter-increment: step-counter;
-    padding-bottom: 1.25em;
+.line-item {
+	width: 90%;
+	display: block;
+	font-size: 2.15rem;
+	margin: auto;
 }
 
-.traits li::before{
-	content: counter(step-counter);
-    margin-right: 1em;
-    font-size: 1.25rem;
-    color: #666666;
-
+.second-block {
+	background-color: #344459;
 }
 
-.currentlyreading {
-	clear: both;
+.first-block {
+	margin-bottom: 10em;
 }
 
-article a:link, article a:visited {
-    background-color: #3399DC;
-    color: white;
-    padding: 1.25em 1em;	
-    text-decoration: none;
-    display: inline-block;
-    font-size: .85rem;
+.article-link {
+	padding: 5px;
+	margin-bottom: 5px;
 }
 
-article a:hover, article a:active {
-    background-color: #344459;
-    padding: 1em;
-    font-size: .85rem;
-}
 
 /* artifact, design pages */
 
@@ -168,9 +128,21 @@ div.topquote {
 	padding: 6em .75em;
 }
 
-.notuserquote {
+.notuserquote-green {
 	color: #1DABA5;
-	font-size: 4rem;
+	font-size: 5rem;
+	font-weight: 700;
+	font-style: italic;
+	padding-bottom: .50em;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notuserquote-blue {
+	color: #63D1F4;
+	font-size: 5rem;
 	font-weight: 700;
 	font-style: italic;
 	padding-bottom: .50em;
@@ -181,12 +153,16 @@ div.topquote {
 }
 
 .topquote p {
-	font-size: 2rem;
+	font-size: 3rem;
 	line-height: 150%;
 	text-align: center;
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.jo-header {
+	background-color: #FFFFFF;
 }
 
 .processimage {
@@ -199,14 +175,13 @@ div.topquote {
 
 }
 
-#surveybox {
-	width: 100%;
-	padding-top: 1em;
-	padding-bottom: 3em;
+.projectbox {
+	padding: 3em;
+	margin: 0;
 }
 
-#surveybox:hover, #personabox:hover, #modelbox:hover {
-	background-color: #EEEEEE;
+.projectbox:hover {
+	background-color: #e3e7ea;
 
 }
 
@@ -229,6 +204,7 @@ div.topquote {
 	font-size: 1.25rem;
 }
 
+
 .centertext {
 	display: block;
 	width: 75%;
@@ -239,37 +215,8 @@ div.topquote {
 	color: #344459;
 }
 
-#showmore {
-	text-decoration: none;
-	display: block;
-	background-color: #3399DC;
-	padding: 8px;
-	width: 10%; 
-	font-size: 1rem;
-	color: #FFFFFF;
-	margin: 1em auto 1em auto;
-}
-
-#showless {
-	text-decoration: none;
-	display: block;
-	background-color: #344459;
-	padding: 8px;
-	width: 10%; 
-	font-size: 1rem;
-	color: #FFFFFF;
-	margin: 1em auto 1em auto;
-}
-
-#show-on-click {
-	padding-top: .5em;
-	padding-bottom: .25em;
-}
-
-.survey, .persona, .mentalmodel {
-	clear: both;
-	float: left;
-	width: 70%;
+.showmore.showless {
+	margin: 2em;
 }
 
 .thumbnails {
@@ -292,70 +239,28 @@ div.topquote {
 
 /* contact page */
 
-.backgroundwork {
+.jo-header {
 	background-color: #666666;
 	color: #FFFFFF;
 	width: 100%;
 	padding: 6em 2em;
 }
 
-h2 {
-	color: #E9E0D5;
-	font-size: 3rem;
-	font-weight: 700;
-	margin-left: 8.5em;
-	padding-bottom: .5em;
-}
-
-.worktogether {
-	font-size: 2rem;
-	line-height: 150%;
-	width: 90%;
+.jo-discuss {
 	text-align: center;
-	margin-left: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6em 1em;
 }
 
-.yourneedsbox {
-	background-color: #FFFFFF;
-	width: 100%;
-	padding-top: 8em;
-	padding-bottom: 2.5em;
-}
-
-.whattype {
+.jo-discuss p {
+	font-size: 2rem;
+	width: 70%;
 	color: #666666;
-	font-size: 2rem;
-	text-align: center;
-
-}
-
-.rolebox {
-	width: 100%;
-	padding: .25em 0 3em 3em;
-}
-
-.rolelist {
-	font-size: 1.5rem;
-	display: inline-block;
-
-}
-
-.rolelist li, .rolelist a {
-    font-size: 1.35rem;
-    color: #FFFFFF;
-    background-color: #3399DC;
-    text-decoration: none;
-    display: inline-block;
-    padding: .5em .25em;
-    margin-left: .25em;
-    margin-right: .40em;
-
-}
-
-.jr {
-	font-style: italic;
-	margin-right: .5em;
-	color: #CCCCCC;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 

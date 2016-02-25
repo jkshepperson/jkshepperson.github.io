@@ -7,33 +7,31 @@ $(document).ready(function() {
 
 $('img').click(blowUp); // when user clicks on images, blow them up by toggling between classes
 
-function blowUp() { 
+function blowUp() {
 	$(this).toggleClass('large');// when a user clicks an image blow up
 }
 
 //Process Page
 
-$('#showMore').click(showMoreStuff); //when user clicks on project section (between the divs)
+$('.showmore').click(showMoreStuff); //when user clicks on project section (between the divs)
 
 function showMoreStuff () {
-	event.preventDefault();
-	$('img').addClass('large'); //blowup the images
-	$('#show-on-click').slideDown(); //push other sections down, reveal hidden text
-	$('#showLess').slideDown(); //push the show less link down, too
-	$('#showLess').show(); //show the show less link
-	$('#showMore').hide(); //hide the show more link
-
+	// $('img').addClass('large'); //blowup the images
+	// $('#show-on-click').slideDown(); //push other sections down, reveal hidden text
+	// $('#showLess').slideDown(); //push the show less link down, too
+	// $('#showLess').show(); //show the show less link
+	// $('#showMore').hide(); //hide the show more link
+	$(this).hide();
+	$($(this).next()).show();
+	$($(this).next().next()).show();
 }
 
-$('#showLess').click(showLessStuff); //when user clicks show less, collapse stuff
+$('.showless').click(showLessStuff); //when user clicks show less, collapse stuff
 
 function showLessStuff () {
-	event.preventDefault();
-	$('img').removeClass('large');
-	$('#show-on-click').slideUp(); //collapse section up
-	$('#showLess').slideUp(); //collapse link up
-	$('#showLess').hide(); //hide show less link
-	$('#showMore').show(); //show 'show more' link
+	$(this).hide();
+	$($(this).prev()).hide();
+	$($(this).prev().prev()).show();
 }
 
 

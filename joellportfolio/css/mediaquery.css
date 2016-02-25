@@ -1,0 +1,8 @@
+@media screen and (max-width: 760px) {
+    .joell.small {
+        display: block;
+    }
+    .joell {
+    	display: none;
+    }
+}

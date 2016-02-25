@@ -1,53 +1,59 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Hind:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/mediaquery.css" media="screen" type="text/css" />
+   
+    <title>Joell Portfolio</title>
 
-<html>
-	<head>
-		<link href='https://fonts.googleapis.com/css?family=Hind:400,300,600' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/portfolio_reset.css" media="screen" type="text/css" />
-		<link rel="stylesheet" href="css/styles.css" media="screen" type="text/css" />
-	</head>
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
 	<body>
 		<header>
+		<div class="container">
+		    <div class="header clearfix">
+		        <nav>
+		          <ul class="nav nav-pills pull-right jo-nav">
+		            <li role="presentation"><a href="index.html">About</a></li>
+		            <li role="presentation"><a href="process.html">Process</a></li>
+		            <li role="presentation"><a href="work.html">Work</a></li>
+		            <li role="presentation" class="jo-nav-active"><a href="contact.html">Contact</a></li>
+		          </ul>
+		        </nav>
+		        <h1 class="joell"><a href="index.html">Joell Shepperson</a></h1>
+		        <h1 class="joell small"><a href="index.html">J.S.</a></h1>
+		      </div>
+		  </header>
 			
-			<nav class="normalmenu">
-				<h1 id="joell">Joell Shepperson</h1>
-				<ul class="mainmenu">
-      				<li><a href="index.html">About</a></li>
-      				<li><a href="process.html">Process</a></li>
-      				<li><a href="work.html">Work</a></li>
-      				<li><a href="contact.html" class="active">Contact</a></li>
-   				</ul>
-			</nav>
 
-		</header>
+		      <div class="topquote jo-header">
+				<div class="notuserquote-green">Let's work together!</div>
+				<p>Currently looking to team up with a great group of folks interested in building socially-progressive products to benefit the greater good.</p>
+			</div>
 
-		<div class="backgroundwork">
 
-			<h2>Let's work together!</h2>
+		      <div class="starter-template jo-discuss">
+        		<h1>What would you like to discuss?</h1>
+        			<p>Select the topic you'd like to discuss, any information you want to share about the project or opportunity and the best time and method to contact you.</p>
 
-				<p class="worktogether">Currently looking to team up with a great group of folks interested in building socially-progressive products to benefit the greater good.</p>
+        			<div class="btn btn-lg btn-default"><a href="mailto:jkshepperson@gmail.com?Subject=UX%20Design" target="_top">UX Design</a></div>
 
-		</div>
-		
-		<div class="yourneedsbox">
-			<p class="whattype">Click the type of role you wish to discuss</p>
-		</div>
+        			<div class="btn btn-lg btn-default"><a href="mailto:jkshepperson@gmail.com?Subject=Product%20Management" target="_top">Product Management</a></div>
 
-		<div class="rolebox">			
-			<ul class="rolelist">
-					<li><a href="mailto:jkshepperson@gmail.com?Subject=Product%20Manager" target="_top">Product Management</a></li>
-					<li><a href="mailto:jkshepperson@gmail.com?Subject=Product%20UX%20Design" target="_top">Product/UX Design</a></li>
-					<li><a href="mailto:jkshepperson@gmail.com?Subject=JR%20Front%20End%20Development" target="_top"><span class="jr">Very JR</span>Front End Development</a></li>
-					<li><a href="mailto:jkshepperson@gmail.com?Subject=Just%20A%20Chat" target="_top">None, just want to chat.</a></li>
-			</ul>
-		</div>
+        			<div class="btn btn-lg btn-default"><a href="mailto:jkshepperson@gmail.com?Subject=JR%20Front%20End%20Development" target="_top">Very Jr Front End Development</a></div>
 
-			<footer>
-				<p class="socialmedia">Links to social media</p>
-			</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/portfolio.js"></script>
-	</body>
+        			<div class="btn btn-lg btn-default"><a href="mailto:jkshepperson@gmail.com?Subject=Just%20Saying%20Hello" target="_top">Quick chat</a></div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
