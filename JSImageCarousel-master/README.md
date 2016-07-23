@@ -1,1 +1,0 @@
-# JSImageCarousel
