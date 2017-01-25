@@ -1,0 +1,285 @@
+/* color palatte colors:
+F5F5F5 - grey nav
+444444 - grey text
+E9E0D5 - pearl
+1DABA5 - sea green
+3399DC - bright blue
+344459 - navy */
+
+/* start page */
+
+/* base site (navigation, footer, fonts) styles */
+
+header {
+	background-color: #F5F5F5;
+}
+
+img:hover {
+	cursor: zoom-in;
+}
+
+.jo-nav {
+	padding: .55em 0 .50em 0; 
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.jo-nav-active {
+	color: #344459;
+	font-weight: 700;
+}
+
+
+.joell {
+	margin: 0;
+	float: left;
+	width: 45%;
+	color: black;
+	font-family: 'Sacramento';
+	font-size: 3rem;
+	letter-spacing: 2px;
+	padding: .55em 0 .50em 0;
+	margin-left: 1.50em;
+}
+
+.joell a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.joell.small {
+	display: none;
+}
+
+p.hide-some, div.hide-some {
+	display: none;
+}
+
+.container-color {
+	background-color: #333333;
+	color: #FFFFFF;
+	width: 100%;
+	padding: 6em 2em;
+}
+
+.navbar-left {
+	display: none;
+}
+
+/* index page styles */
+
+#jopic {
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	padding-top: 3.50em;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.dictionary {
+	display: block;
+	font-size: 7rem;
+	color: #FFFF00;
+	padding-top: .50em;
+	padding-left: .50em;
+	text-align: center;
+}
+
+.noun {
+	display: block;
+	font-size: 4rem;
+	color: #E9E0D5;
+	font-style: italic;
+	padding-top: .75em;
+	text-align: center;
+}
+
+.definition {
+	clear: both;
+	width: 100%;
+	display: block;
+	color: #FFFFFF;
+	padding: 1em 1em 3em 1em;
+	margin: .25em 0 10em 8em;
+
+}
+
+.trait {
+	display: block;
+	padding: 1em;
+}
+
+.line-item {
+	width: 90%;
+	display: block;
+	font-size: 2.15rem;
+}
+
+.second-block {
+	background-color: #344459;
+}
+
+.first-block {
+	margin-bottom: 10em;
+}
+
+.article-link {
+	padding: 5px;
+	margin: 0 0 10px 5px;
+}
+
+
+/* process, work pages */
+
+div.topquote {
+	width: 100%;
+	padding: 6em .75em;
+}
+
+.notuserquote-yellow {
+	color: #F6FF97;
+	font-size: 4rem;
+	font-weight: 700;
+	font-style: italic;
+	padding-bottom: .50em;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.notuserquote-blue {
+	color: #70DBDB;
+	font-size: 4rem;
+	font-weight: 700;
+	font-style: italic;
+	padding-bottom: .50em;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.starter {
+	width: 50%;
+}
+
+.topquote p {
+	font-size: 2.5rem;
+	line-height: 150%;
+	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.processimage {
+	width: 75%;
+	height: 75%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+
+}
+
+.projectbox {
+	padding: 3em;
+	margin: 0;
+}
+
+.projectbox:hover {
+	background-color: #e3e7ea;
+
+}
+
+.projecttitle {
+	display: block;
+	text-align: center;
+	font-family: 600;
+	font-style: bold;
+	color: #1DABA5;
+	font-size: 3.5rem;
+	padding: .25em;
+	margin-top: 1em;
+}
+
+.location {
+	display: block;
+	text-align: center;
+	padding-bottom: 1em;
+	color: #444444;
+	font-size: 1.25rem;
+}
+
+
+.centertext {
+	display: block;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #344459;
+}
+
+.showmore.showless {
+	margin: 2em;
+}
+
+.thumbnails {
+	clear: both;
+	display: block;
+	height: 25%;
+	width: 25%;
+	padding: .75em .25em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.large {
+	height: 75%;
+	width: 75%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.result {
+	color: #1DABA5;
+	font-style: italic;
+	font-weight: 700;
+}
+
+/* contact page */
+
+
+.jo-discuss {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6em 1em;
+}
+
+.jo-discuss p {
+	font-size: 2rem;
+	width: 70%;
+	color: #666666;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+

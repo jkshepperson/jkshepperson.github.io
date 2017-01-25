@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+
+/* index */
+    .joell.small {
+        display: block;
+        margin: 0;
+		float: left;
+		width: 45%;
+		color: black;
+		font-family: 'Sacramento';
+		font-size: 3rem;
+		letter-spacing: 2px;
+		padding: .55em 0 .50em 0;
+		margin-left: 1.50em;
+    }
+
+    .joell.small a {
+        text-decoration: none;
+    }
+
+    .joell {
+    	display: none;
+    }
+
+    h2.dictionary {
+    	display: block;
+    	margin: 0 auto;
+    }
+
+    .noun {
+    	display: block;
+    	margin: 0 auto;
+    }
+
+    .traits {
+    	display: block;
+    	margin: 0 auto;
+    }
+
+    .line-item {
+		width: 75%;
+	}
+
+/* process, work pages */
+
+	.centertext {
+		width: 80%;
+	}
+
+	.topquote p {
+		width: 75%;
+	}
+
+/* contact */
+	.stack-btns {
+		clear: both;
+		padding: 1em;
+	}
+
+	.stack-btns a {
+		text-decoration: none;
+	}
+}
